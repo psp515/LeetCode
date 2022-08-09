@@ -1,5 +1,5 @@
 # LeetCode
 
-Repository for solutions of taksks from LeetCode :D.
+Repository for solutions of tasks from LeetCode :D.
 
 Created using [LeetHub](https://github.com/QasimWani/LeetHub)
