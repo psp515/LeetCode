@@ -15,4 +15,7 @@ class Solution:
         if number < -2147483648 or number > 2147483647:
             return 0
         
-        return number if not is_neg else (-number)
+        if is_neg:
+            return -number
+        
+        return number
