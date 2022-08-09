@@ -5,15 +5,11 @@ class Solution:
         if x < 0:
             is_neg = True
             x = -x
-        factor = len(str(x))-1
+
         while x != 0:
             digit = x % 10
+            number = number * 10 + digit
             x //= 10
-            if digit == 0 and number == 0:
-                factor -= 1
-                continue
-            number += (digit * 10**factor)
-            factor -= 1
         
         if number < -2147483648 or number > 2147483647:
             return 0
