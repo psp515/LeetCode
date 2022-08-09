@@ -7,7 +7,7 @@ class Solution:
             is_neg = True
             x = -x
 
-        while x != 0:
+        while x:
             digit = x % 10
             number = number * 10 + digit
             x //= 10
