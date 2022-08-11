@@ -7,6 +7,7 @@ class Solution(object):
         
         n = len(nums)
         i,j = 0, n - 1
+        count = 0
         
         while i < j:
             if nums[i] == val :
@@ -14,8 +15,7 @@ class Solution(object):
                 j -= 1
             else:
                 i += 1
-        
-        count = 0
+                
         
         for element in nums:
             if element != val:
