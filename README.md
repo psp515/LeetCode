@@ -8,6 +8,16 @@ The simplicity of implementing ideas really helps to understand the problem and 
 Ofcourse implementing algorithms in Python has some drawbacks like:
 - slow execution time 
 - some problems are already solved by the language 
-yet the most importat is finding solution to the problem, and implementation is on second place.
 
+Yet the most importat is finding solution to the problem, and implementation is on second place.
+
+
+
+
+
+
+
+<br />
+<br />
+<br />
 Created using [LeetHub](https://github.com/QasimWani/LeetHub)
