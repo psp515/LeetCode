@@ -1,11 +1,8 @@
 class Solution(object):
     def countOdds(self, low, high):
-        count = (high - low) // 2
-        isLow = low % 2 == 1
-        isHigh = high % 2 == 1
-        if isLow or isHigh:
-            return count + 1
+        if low % 2 == 1 or high % 2 == 1:
+            return ((high - low) // 2) + 1
         else:
-            return count
+            return (high - low) // 2
         
         
