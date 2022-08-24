@@ -9,11 +9,9 @@ class Solution(object):
         for i in range(n):
             for j in range(i, n):
                 if i == j:
-                    print(i, arr[i])
                     sum += arr[i]
                     continue
                 if (j - i + 1) % 2 == 1:
-                    print(i, j, prefix[j] - prefix[i])
                     sum += prefix[j+1] - prefix[i]
         return sum
         
