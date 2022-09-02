@@ -5,13 +5,20 @@
 #         self.left = left
 #         self.right = right
 class Solution(object):
+
     def isValidBST(self, root):
-        if not root:
-            return True
-        return self.isValidNode(root,float('-inf'), float('inf'))
-    
-    def isValidNode(self, root, l, r):
-        if not root:
-            return True
-        return l < root.val < r and self.isValidNode(root.left, l, root.val) and self.isValidNode(root.right, root.val, r)
+        stack = [(root, float('-inf'), float('inf'))]
+
+        while stack:
+            node, l, r = stack.pop()
             
+            if node == None or node == node.left or node == node.right:
+                continue
+
+            if not (l < node.val < r):
+                return False
+
+            stack.append((node.right, node.val, r))
+            stack.append((node.left, l, node.val))
+
+        return True
